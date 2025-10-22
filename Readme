@@ -1,0 +1,29 @@
+//////////////Jawaban for pada halaman 3///////////////
+
+  1. pada bagian for mempunyai nilai variabel yang tetap nilainya dan penghitungan sebelum perulangan di lakukan lagi,inisialisasi for (i = 1);
+     pada bagaian kedua menentukan syarat biar perulangan berjalan dengan lancar dan tetap di jalankan dengan baik, Kondisin i <= jmlh;
+     pda bagian ketiga dapat mengubah variabel menghitung setiap kali perulangan selesai satu kali yaitu,update atau i++.
+  2. nilai tertinggi 100 nilai mahasiswa dinyatakan nilai paling besar dan angka kecil juga bisa menggantikannya.
+     nilai terendah 0 nilai mahasiswa di nyatakan paling kecil dan angka besar juga bisa menggantikannya.
+  3. kode nilai tersebut mencari nilai tertinggi dan nilai terendah dari data mahasiswa tersebut.
+  4. sudah
+  5. sudah
+
+/////////////Jawaban wilie pada halaman 5///////////////
+  1. nilai < 0 bagi saya nilai tersebut sangat kecil 
+     nilai > 100 bagi saya nilai tersebut sangat besar 
+     || dan atau artinya dia bersifat kondisi benar 
+     jadi kesimpulan dari atas menfalidasikan input nilai agar programnya berjalan lancar dan menerima angka 0-100 aja
+
+     continue bersifat mengesekusi kode lainnya pada looping.
+  2. i++ berfungsi melakukan menambah nilai perhitungan 
+     i++ jika perulangan di tulis di awal dia akan melakukan perjalanan melewati perhitungan jumlah iterasi menjadi kurang satu awalnya berjumlah 10, dan menjadi 9
+  3. perulangan while akan berjalan sebanyak banyaknya jumlah mahasiswa 19 kali
+  4. sudah
+  5. sudah
+
+////////////Jawaban DOWHILE pada halaman 7/////////////
+ 1. pada saat dowhile berjalan dia dapat melakukan proses sebanyak satu kali aja 
+ 2. perulangan akan terus berjalan selama yang di masukan bukan 'Batal' dan jika pengguna mengetik batal proses tidak akan berjalan lagi yaitu bersifat false
+ 3. menjadikan perulangan itu berjalan terus dan sampai di berhentikan secara paksa pada program yang berbentuk perintak break.
+ 4. dowhile berjalan terus dinjalankan walaupun tidakk ada variabel penghitungnya dan berkondisi menggunakan logika
