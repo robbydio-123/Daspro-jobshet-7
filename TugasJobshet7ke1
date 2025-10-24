@@ -18,7 +18,7 @@ public class Tugas1jobshet7 {
             
             while (totalTiketTerjual < 0) {
                 System.out.println("Input tidak valid.");
-                sc.next(); 
+                sc.nextInt(); 
                 System.out.print("Masukkan jumlah tiket yang dibeli: ");
             }
 
