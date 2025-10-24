@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+public class Tugas1jobshet7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double HARGA_TIKET = 50000;
+        int totalTiketTerjual = 0;
+        double totalPendapatan = 0;
+
+        System.out.println("===Penjualan Tiket Bioskop===");
+        System.out.println("Ketik angka 0 untuk mengakhiri pesanan tiket.");
+
+        int jumlahTiket;
+
+        do {
+            System.out.print("Masukkan jumlah tiket yang dibeli: ");
+            
+            while (!sc.hasNextInt()) {
+                System.out.println("Input tidak valid.");
+                sc.next(); 
+                System.out.print("Masukkan jumlah tiket yang dibeli: ");
+            }
+
+            jumlahTiket = sc.nextInt();
+
+            if (jumlahTiket == 0) {
+                break;
+            }
+            if (jumlahTiket < 0) {
+                System.out.println("Jumlah tiket tidak boleh negatif");
+                continue;
+            }
+
+            double totalHarga = jumlahTiket * HARGA_TIKET;
+            if (jumlahTiket > 10) {
+                totalHarga *= 0.85; 
+                System.out.println("Diskon 15%.");
+            } else if (jumlahTiket > 4) {
+                totalHarga *= 0.90; 
+                System.out.println("Diskon 10%.");
+            }
+
+            totalTiketTerjual += jumlahTiket;
+            totalPendapatan += totalHarga;
+
+            System.out.printf("Total harga untuk pelanggan ini: Rp %, .0f%n%n", totalHarga);
+
+        } while (true);
+        System.out.println("\n=== Penjualan Hari Ini ===");
+        System.out.println("Total tiket terjual: " + totalTiketTerjual);
+        System.out.printf("Total pendapatan: Rp %, .0f%n", totalPendapatan);
+
+        sc.close();
+    }
+}
