@@ -16,7 +16,7 @@ public class Tugas1jobshet7 {
         do {
             System.out.print("Masukkan jumlah tiket yang dibeli: ");
             
-            while (!sc.hasNextInt()) {
+            while (totalTiketTerjual < 0) {
                 System.out.println("Input tidak valid.");
                 sc.next(); 
                 System.out.print("Masukkan jumlah tiket yang dibeli: ");
@@ -44,12 +44,12 @@ public class Tugas1jobshet7 {
             totalTiketTerjual += jumlahTiket;
             totalPendapatan += totalHarga;
 
-            System.out.printf("Total harga untuk pelanggan ini: Rp %, .0f%n%n", totalHarga);
+            System.out.println("Total harga untuk pelanggan ini: Rp + totalHarga);
 
         } while (true);
         System.out.println("\n=== Penjualan Hari Ini ===");
         System.out.println("Total tiket terjual: " + totalTiketTerjual);
-        System.out.printf("Total pendapatan: Rp %, .0f%n", totalPendapatan);
+        System.out.println("Total pendapatan: Rp + totalPendapatan);
 
         sc.close();
     }
